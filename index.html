@@ -1,14 +1,7 @@
 <html>
 
   <head>
-    <script>
-      function onSignIn(googleUser) {
-        var profile = googleUser.getBasicProfile();
-        var name = profile.getName();
-        document.getElementById("p0").innerHTML = name;
-        console.log('Name: ' + profile.getName());
-      }
-    </script>
+
 
     <link rel="stylesheet" type="text/css" href="Style.css">
     <link rel="icon" href="http://www.artfido.com/avatar/8989/1444759704_1341627_profile_picture_display.png">
@@ -40,6 +33,15 @@
         <div class="g-signin2" data-onsuccess="onSignIn"></div>
       </div>
     </div>
+
+    <script>
+      function onSignIn(googleUser) {
+        var profile = googleUser.getBasicProfile();
+        var name = profile.getName();
+        document.getElementById("p0").innerHTML = name;
+        console.log('Name: ' + profile.getName());
+      }
+    </script>
 
 
     <div class = "MainContent" onclick = "myhref('SubPage.html');">
