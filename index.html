@@ -8,12 +8,19 @@
     <script src="https://apis.google.com/js/platform.js" async defer></script>
     <meta name="google-signin-client_id" content="760109618003-of1l9b52c7cmqhfnk2tnrk3l7k6jqm1f.apps.googleusercontent.com"?
 
+
   </head>
 
   <body>
     <script>
       function myhref(web){
         window.location.href=web;
+      }
+
+      function onSignIn(googleUser) {
+        var profile = googleUser.getBasicProfile();
+        var name = profile.getName();
+        document.getElementById(p0).innerHTML = name;
       }
     </script>
 
